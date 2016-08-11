@@ -1,0 +1,30 @@
+<ion-view>
+  <ion-header>
+	<div class="bar bar-header bar-positive">
+	  <h1 class="title">Register</h1>
+	</div>
+  </ion-header>
+  <ion-content has-bouncing="false" class="has-header">
+	<form name="signupForm" ng-submit="doSignUp()" novalidate>
+	  <div class="list">
+		<label class="item item-input">
+		  <span class="input-label">Username</span>
+		  <input type="text" ng-model="signupData.username" required>
+			</label>
+		<label class="item item-input">
+		  <span class="input-label">Contact Number</span>
+		  <input type="number" ng-model="signupData.phone" required>
+			</label>
+		
+		<label class="item item-input">
+		  <span class="input-label">Password</span>
+		  <input type="password" ng-model="signupData.password" required>
+			</label>
+		
+		<label class="item">
+		  <button class="button button-block button-calm" type="submit" ng-disabled="signupForm.$invalid">Sign Up</button>
+		</label>
+	  </div>
+	</form>
+  </ion-content>
+</ion-view>
